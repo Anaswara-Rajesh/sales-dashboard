@@ -15,8 +15,6 @@ const SalesMap = () => {
     { name: "South Africa", sales: 4200, color: "#3B82F6" },
   ];
 
-  const maxSales = Math.max(...countries.map((c) => c.sales));
-
   return (
     <div className="bg-white rounded-2xl border border-[#F1F1F4] p-4 w-full">
       <div className="flex justify-between items-center mb-4">
