@@ -1,11 +1,9 @@
-// src/components/TargetVsReality.js
 import React from "react";
 import {
   BarChart,
   Bar,
   XAxis,
   YAxis,
-  Tooltip,
   ResponsiveContainer,
 } from "recharts";
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";

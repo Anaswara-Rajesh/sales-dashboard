@@ -6,7 +6,6 @@ import CustomerSatisfaction from "./CustomerSatisfaction";
 import TargetVsReality from "./TargetVsReality";
 import TopProducts from "./TopProducts";
 import SalesMap from "./SalesMap";
-import { ArrowDownTrayIcon } from "@heroicons/react/24/outline";
 import { FaUserPlus } from "react-icons/fa";
 import { IoPricetag } from "react-icons/io5";
 import { BiSolidReport } from "react-icons/bi";

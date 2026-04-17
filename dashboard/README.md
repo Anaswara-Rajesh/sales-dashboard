@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Sales Dashboard - React Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern sales dashboard application built with React, Tailwind CSS, react-simple-maps and Recharts.
 
-## Available Scripts
+## Features Implemented
 
-In the project directory, you can run:
+### Dashboard Features
+- **Statistics Cards** - 4 cards showing Total Sales, Total Orders, Product Sold, and New Customers with percentage changes
+- **Visitor Insights** - Line chart showing Loyal, New, and Unique customers trend over 12 months
+- **Total Revenue** - Bar chart comparing Online vs Offline sales from Monday to Sunday
+- **Customer Satisfaction** - Line chart comparing current month vs last month performance
+- **Target vs Reality** - Bar chart comparing Reality Sales vs Target Sales
+- **Top Products** - Table with product popularity and sales percentages
+- **Sales Map** - Country-wise sales distribution with volume and services metrics
+- **Volume vs Service Level**
 
-### `npm start`
+### Data Table Features
+- **API Integration** - Fetches user data from JSONPlaceholder API
+- **Search** - Real-time search by name or email
+- **Sorting** - Sort by Name, Email, Company Name, or City (A-Z and Z-A)
+- **Filter** - Filter customers by city from dropdown
+- **Loading States** - Shows loading spinner while fetching data
+- **Error Handling** - Displays error message with retry option
+- **Responsive Table** - Horizontal scroll on mobile devices
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### UI/UX Features
+- **Sidebar Navigation** - Collapsible sidebar with menu items (Dashboard, Leaderboard, Orders, Products, Sales Report, Messages, Settings)
+- **Header** - Search bar, language selector, notifications, and user profile dropdown
+- **Responsive Design** - Works on desktop, tablet, and mobile devices
+- **Modern Charts** - Interactive charts using Recharts library
+- **Custom Icons** - Heroicons and React Icons for consistent design
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Assumptions & Decisions
+- **Chart Data** - Sample data was created to match the Figma design patterns since no real data was provided
+- **Icons** - Used external icon libraries (Heroicons and React Icons) for consistency and scalability
+- **Logo Icon** - Could not extract the exact logo icon image from the Figma design, so placed a random icon (fire icon) as a placeholder
+- **User Avatar** - Used placeholder avatar image since no specific user photo was provided in the design
 
-### `npm test`
+## Project Setup Steps
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn package manager
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. **Clone the repository**
+```bash
+git clone https://github.com/Anaswara-Rajesh/sales-dashboard.git
+cd sales-dashboard/dashboard
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. **Install Dependencies**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npm install
 
-### `npm run eject`
+3. **Install Additional required packages**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm install axios recharts @heroicons/react react-icons
+npm install react-simple-maps --force
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Start the development server**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm start
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. **Open your browser**
 
-## Learn More
+http://localhost:3000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

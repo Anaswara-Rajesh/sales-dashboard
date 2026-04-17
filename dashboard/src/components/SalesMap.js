@@ -3,7 +3,6 @@ import {
   ComposableMap,
   Geographies,
   Geography,
-  ZoomableGroup,
 } from "react-simple-maps";
 
 const SalesMap = () => {
@@ -17,16 +16,6 @@ const SalesMap = () => {
   ];
 
   const maxSales = Math.max(...countries.map((c) => c.sales));
-
-  const getCountryColor = (sales) => {
-    const ratio = sales / maxSales;
-
-    if (ratio > 0.8) return "#4F46E5";
-    if (ratio > 0.6) return "#6366F1";
-    if (ratio > 0.4) return "#818CF8";
-    if (ratio > 0.2) return "#A5B4FC";
-    return "#C7D2FE";
-  };
 
   return (
     <div className="bg-white rounded-2xl border border-[#F1F1F4] p-4 w-full">
